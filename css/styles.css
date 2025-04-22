@@ -52,7 +52,7 @@ img {
   padding: 1.3rem 2.3rem;
   border: 1px solid var(--secondary-color);
   border-radius: 32px;
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
   color: var(--dark-color);
   cursor: pointer;
   transition: all 0.2s;
@@ -100,7 +100,7 @@ img {
 .heading-border {
   width: 64px;
   height: 4px;
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   margin: 0 auto;
 }
 
@@ -109,6 +109,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 2rem 1.75rem;
   background-color: white;
@@ -130,7 +131,7 @@ img {
 
 .navbar.navbar-scroll {
   background-color: rgba(235, 77, 85, 0.8);
-  backdrop-filter: blue(10px);
+  backdrop-filter: blur(10px);
 }
 
 .navbar-flex {
@@ -182,7 +183,7 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0.95;
   padding: 3rem 2rem;
-  text-align: center;
+  text-align:center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   transform: translateX(100%);
@@ -303,7 +304,7 @@ img {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   font-weight: 700;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .summary .list-item {
@@ -477,6 +478,7 @@ img {
 
 .newsletter-flex {
   display: flex;
+  gap:1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -490,7 +492,11 @@ img {
   font-weight: 700;
 }
 
-.newsletter input[type="email"] {
+.newsletter p{
+  max-width:600px;
+}
+
+.newsletter input[type='email'] {
   padding: 1rem 2rem;
   border: 1px solid #ccc;
   width: 100%;
@@ -560,7 +566,7 @@ img {
 }
 
 inner-header h1 {
-  font-size: 2.5;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -589,7 +595,7 @@ inner-header h1 {
   display: block;
   width: 100%;
   font-size: inherit;
-  font-family: inherot;
+  font-family: inherit;
   margin: 0 auto;
 }
 
@@ -662,7 +668,7 @@ inner-header h1 {
   }
 
   .chapter-cards,
-  .takeaways-card {
+  .takeaways-cards {
     grid-template-columns: 1fr;
   }
 
@@ -742,7 +748,7 @@ inner-header h1 {
   }
 
   .topics {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns:  1fr;
   }
 
   .summary .container {
